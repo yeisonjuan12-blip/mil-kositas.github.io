@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fc6701">
+<title>Mil Kositas — Mil cositas a buen precio</title>
+<meta name="description" content="Mil Kositas: útiles, hogar, belleza, tecnología y juguetes a buen precio. Paga fácil con Yape o Plin y recibe en Nuevo Chimbote y Chimbote.">
+<meta property="og:title" content="Mil Kositas — Mil cositas a buen precio">
+<meta property="og:description" content="Útiles, hogar, belleza y tecnología desde S/ 7.90. Envío gratis desde S/ 99.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="imagenes/logo.png">
+<link rel="icon" href="imagenes/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="top"><div class="mq">🔥 Ofertas relámpago todos los días &nbsp;·&nbsp; 🚚 Envío GRATIS desde S/ 99 &nbsp;·&nbsp; 🛵 N. Chimbote S/ 5 · Chimbote S/ 10 &nbsp;·&nbsp; 💜 Yape y 💙 Plin &nbsp;·&nbsp; 🎁 Mil cositas a buen precio &nbsp;·&nbsp;</div></div>
+
+<header class="site-header">
+  <a class="brand" href="#" id="homeLink" aria-label="Mil Kositas, ir al inicio"><img src="imagenes/logo.png" alt="Mil Kositas by Freisy"></a>
+  <div class="search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="Buscar: lápiz, audífonos, mochila…" autocomplete="off" aria-label="Buscar productos">
+    <button id="clearq" type="button" aria-label="Borrar búsqueda">×</button>
+  </div>
+  <button id="cartbtn" type="button" aria-label="Abrir carrito">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2 3h3l2.6 12.2a2 2 0 0 0 2 1.6h9.1a2 2 0 0 0 1.9-1.4L23 7H6"/></svg>
+    <span id="cnt">0</span>
+  </button>
+</header>
+
+<main class="wrap">
+  <nav class="cats" id="cats" aria-label="Categorías"></nav>
+  <section class="hero" id="hero" aria-label="Promociones"></section>
+  <section class="ben" aria-label="Beneficios">
+    <div><b>⚡</b>Pago con Yape / Plin</div>
+    <div><b>📦</b>Delivery en Chimbote y N. Chimbote</div>
+    <div><b>🔒</b>Compra segura</div>
+    <div><b>💬</b>Atención por WhatsApp</div>
+  </section>
+  <div id="list"></div>
+</main>
+
+<footer>
+  <div class="fwrap">
+    <div>
+      <img src="imagenes/logo.png" alt="Mil Kositas">
+      <p style="margin:12px 0 6px">Mil cositas para ti, a buen precio. Útiles, hogar, belleza, tecnología, moda y juguetes.</p>
+      <p style="margin:0"><b style="color:var(--y)">Yape / Plin:</b> <span id="fy">—</span><br><b style="color:var(--y)">WhatsApp:</b> <span id="fw">—</span></p>
+    </div>
+    <div>
+      <h4>Tienda</h4>
+      <ul>
+        <li><a href="#" data-go="Útiles">Útiles</a></li>
+        <li><a href="#" data-go="Hogar">Hogar</a></li>
+        <li><a href="#" data-go="Belleza">Belleza</a></li>
+        <li><a href="#" data-go="Tecnología">Tecnología</a></li>
+        <li><a href="#" data-go="Moda">Moda</a></li>
+        <li><a href="#" data-go="Juguetes">Juguetes</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Ayuda</h4>
+      <ul>
+        <li><a href="#" id="trackLink">Seguir mi pedido</a></li>
+        <li><a href="#" id="waFoot">Escríbenos por WhatsApp</a></li>
+        <li><a href="#" id="creditsLink">Créditos de las fotos</a></li>
+        <li><a href="#" id="howLink">Cómo pagar</a></li>
+      </ul>
+      <div class="pays" aria-label="Medios de pago"><span>YAPE</span><span>PLIN</span><span>VISA</span><span>MASTERCARD</span></div>
+    </div>
+  </div>
+  <div class="fbot">
+    <span>© <span id="year"></span> Mil Kositas by Freisy</span>
+    <span>Hecho con 🧡 en Perú</span>
+  </div>
+</footer>
+
+<a id="wa" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 .8C7.6.8.8 7.6.8 16c0 2.7.7 5.3 2.1 7.6L.8 31.2l7.8-2a15.2 15.2 0 0 0 7.4 1.9c8.4 0 15.2-6.8 15.2-15.2S24.4.8 16 .8zm0 27.7c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.6 1.2 1.2-4.5-.3-.5a12.5 12.5 0 0 1-1.9-6.7C3.2 8.9 8.9 3.2 16 3.2S28.8 8.9 28.8 16 23.1 28.5 16 28.5zm6.9-9.4c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.2.4-1 1.2-1.2 1.5-.2.3-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.2-.4.4-.7.1-.2 0-.5 0-.7 0-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2.2-.9 2.5-1.7.3-.8.3-1.6.2-1.7-.1-.2-.3-.2-.7-.4z"/></svg>
+</a>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<div class="ov" id="drawer" aria-hidden="true"><div class="panel" id="panel" role="dialog" aria-modal="true" aria-label="Carrito y pago"></div></div>
+<div class="ov" id="mo" aria-hidden="true"><div id="modal" role="dialog" aria-modal="true" aria-label="Detalle del producto"></div></div>
+
+<script src="assets/qrcode.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
